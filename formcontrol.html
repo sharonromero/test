@@ -53,7 +53,26 @@
 				<option>North Carolina</option>
 				<option>New York</option>
 			</optgroup>
-		</select>	
+		</select>
+
+		<!--Value attribute is optional in all of the date and time controls below-->
+
+		<p>Date YYYY-MM-DD <input type="date" name="name" value="2019-01-14"></p>
+
+		<p>Time hh:mm:ss <input type="time" name="name" value="03:13:00"></p>
+
+		<p>DateTime-local YYYY-MM-DDThh:mm:ss<input type="datetime-local" name="name" value="2019-01-14T03:13:00">
+
+		<p>Month YYYY-MM <input type="month" name="name" value="2019-07"></p>
+		
+		<p>Week YYYY-W# <input type="week" name="name" value="2019-W2"></p>	
+
+		<!--Numerical inputs. Min and max are optional & you can have one without the other.-->
+
+		<label>Number of dogs <input type="number" name="guests" min="1" max="6"></label>
+
+		<label>Number of cats (from 0 to 10):<input type="range" name="cats" min="0" max="10" step="1"></label>
+
 	</form>
 
 </body>

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" >
-   <title>Blackstone Bistro: Pizza-on-Demand</title>
+   <title>Black Goose Bistro: Pizza-on-Demand</title>
    <style type="text/css">
       ol, ul { 
      list-style-type: none;
@@ -12,7 +12,7 @@
 
 <body>
 
-<h1>Blackstone Bistro | Pizza-on-Demand</h1>
+<h1>Black Goose Bistro | Pizza-on-Demand</h1>
 
 <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
 
@@ -20,10 +20,10 @@
 Your Information
 <ul>
   <li>Name: <input type="text" name="customername"></li>
-  <li>Address:</li>
-  <li>Telephone Number:</li>
-  <li>Email:</li>
-  <li>Delivery instructions:</li>
+  <li>Address: <input type="text" name="address"></li>
+  <li>Telephone Number: <input type="tel" name="telephone"></li>
+  <li>Email: <input type="email" name="email"></li>
+  <li>Delivery instructions: <br><textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
 </ul>
 
 
@@ -52,6 +52,10 @@ Your Information
 
 <p>Number</p>
 <p>How many pizzas:<p>
+
+<input type="submit" value="Bring me a pizza!"> 
+<input type="reset" value="Reset">
+
 </form>
 </body>
 </html>

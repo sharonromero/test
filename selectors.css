@@ -3,7 +3,7 @@ DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!
 
 /* Give the <body> element a background of #bdc3c7*/
 body {
-	background-color: #bdc3c7;
+	background: #bdc3c7;
 }
 
 
@@ -27,7 +27,7 @@ li {
 
 /*Change the background on every paragraph to be yellow*/
 p {
-	background-color: yellow;
+	background: yellow;
 }
 
 
@@ -40,7 +40,7 @@ input {
 
 /* Give everything with the class 'hello' a white background*/
 .hello {
-	background-color: white;
+	background: white;
 }
 
 
@@ -56,18 +56,18 @@ div p {
 }
 
 /*Make only inputs with type 'text' have a gray background*/
-input[type=text] {
-	background-color: gray;
+input[type="text"] {
+	background: gray;
 }
 
 
 /* Give both <p>'s inside the 3rd <div> a pink background*/
-div:nth-of-type(3) > p {
-   background-color: pink;
+div:nth-of-type(3) p {
+   background: pink;
 }
 
 /* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
-div:nth-of-type(3) > p:nth-of-type(2) {
+div:nth-of-type(3) p:nth-of-type(2) {
    border: 5px solid white;
 }
 
@@ -78,6 +78,13 @@ div em {
 	color: white;
 }
 
+/* Also works but since there's only one em above works as well.
+div:nth-of-type(3) em {
+	color:white;
+	font-size: 20px;
+}
+*/
+
 /*BONUS CHALLENGES*/
 /*You may need to research some other selectors and properties*/
 
@@ -85,6 +92,12 @@ div em {
 input[type=checkbox]:checked {
 	margin-left: 50px;
 }
+
+/*His code
+input:checked {
+margin-left: 50px;
+}
+*/
 
 
 /* Make the <label> elements all UPPERCASE without changing the HTML(definitely look this one up*/
